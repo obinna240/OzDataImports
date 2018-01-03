@@ -1,0 +1,12 @@
+1. Go to the Location of your jar i.e pcgAustralia-0.0.1.jar
+2. Open Application.properties and set the location of AustraliaDataFile.csv
+3. You can also alter the name of your solr core and port etc
+4. To run, Assuming the jar is in c:/australia in your cli,
+c:\australia>java -jar pcgAustralia-0.0.1.jar --spring.config.location=c:/australia/application.properties
+
+The line above assumes that the location of applicaiton.properties is in c:/australia/application.properties
+Note that we use application.properties to set the values of all properties.
+In the absence of this, spring will look in 'c:/australiaIndexer/config/AustraliaDatafile.csv' for the csv
+
+Finally, the managed schema has changed.
+Delete the index and use the current managed schema.

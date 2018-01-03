@@ -1,0 +1,5 @@
+To delete the solr index
+http://localhost:8983/solr/australiaCore/update?stream.body=%3Cdelete%3E%3Cquery%3E*:*%3C/query%3E%3C/delete%3E&commit=true
+
+To start solr
+bin/solr start -p 8983

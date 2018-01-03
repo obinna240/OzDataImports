@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<organization>
+	    <name>PCG</name>
+	    <url>http://publicconsultinggroup.co.uk</url>
+  	</organization>
+	
+	<groupId>PCGAustralia</groupId>
+	<artifactId>pcgAustralia</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+
+	<name>AustraliaDataImportation</name>
+	<description>boots</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-email</artifactId>
+		    <version>1.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.6</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.solr/solr-solrj -->
+		<dependency>
+		    <groupId>org.apache.solr</groupId>
+		    <artifactId>solr-solrj</artifactId>
+		    <version>6.6.0</version><!--$NO-MVN-MAN-VER$-->
+		</dependency>
+
+		<!--  
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		-->
+	
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+		    <groupId>com.opencsv</groupId>
+		    <artifactId>opencsv</artifactId>
+		    <version>4.1</version>
+		</dependency>
+	
+		
+		
+		
+		<!--  
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+		-->
+		 
+		<!-- http://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<!--
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.14</version>
+		</dependency>
+		-->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+			        <executable>true</executable>
+			    </configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<developers>
+	    <developer>
+	      <id></id>
+	      <name>Obinna Onyimadu</name>
+	      <email>oonyimadu@publicconsultinggroup.co.uk</email>
+	      <url></url>
+	      <organization>PCG</organization>
+	      <organizationUrl>http://publicconsultinggroup.co.uk</organizationUrl>
+	      <roles>
+	      	<role>developer</role>
+	      </roles>
+	      <timezone>Europe/London</timezone>
+	      <properties>
+	        <picUrl>@Semantris</picUrl>
+	      </properties>
+	    </developer>
+  	</developers>
+
+	<scm>
+		<connection>scm:svn:http://pcgdev01.pcgeu.local/svn/SVN_REPOS/AustraliaIndexer</connection>
+		<developerConnection>scm:svn:https://pcgdev01.pcgeu.local/svn/SVN_REPOS/AustraliaIndexer</developerConnection>
+		<tag>trunk</tag>
+	</scm>
+</project>
